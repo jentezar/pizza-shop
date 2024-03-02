@@ -23,6 +23,16 @@ public class ChicagoPizzaIngredientFactory
 		return veggies;
 	}
 
+	@Override
+	public Veggies[] createNYVeggies() {
+		return new Veggies[0];
+	}
+
+	@Override
+	public Clams createNYClam() {
+		return null;
+	}
+
 	public Pepperoni createPepperoni() {
 		return new SlicedPepperoni();
 	}
